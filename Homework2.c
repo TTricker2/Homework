@@ -4,6 +4,7 @@
 char * reverse(char * str1);
 char * encrypt(char * str1, int n);
 char * rotate(char * str1, int n);
+int CheckRange(char str1, int n);
 
 int main(void)
 {
@@ -17,27 +18,14 @@ int main(void)
 	printf("입력 종료를 원하면 새로운 행에서 ctrl+z 입력\n");
 	printf("Enter String(more than 20 chars): ");
 
-	while (gets(Sentence))
-	{
-		while (Sentence[count])
-			count++;
+	gets(Sentence);
 
-		for (int i = 0; i < count; i++)
-		{
-			if (Sentence[i] < 65 || Sentence[i] > 122 || (Sentence[i] > 90 && Sentence[i] < 97))
-			{
-				printf("문자열만 입력해주세요\n");
-				break;
-			}
-		}
-	}
-
-	printf("얼마나 Encryt하실 건가요?: ");
+	printf("얼마나 Encrypt하실 건가요?: ");
 	scanf("%d", &Encrypt_num);
 	printf("얼마나 rotate 하실 건가요?: ");
-	scanf("%d", &Rotate_num); // 함수 내에서 rotate_num만큼 for문을 돌린다.
+	scanf("%d", &Rotate_num);
 
-	printf("String Entered: \t");
+	printf("\nString Entered: \t");
 	puts(Sentence);
 
 	printf("Reversed: \t\t");
@@ -48,16 +36,15 @@ int main(void)
 	printf("Encrypted: \t\t");
 	encrypt(Sentence, Encrypt_num);
 	puts(Sentence);
-	encrypt(Sentence, -Encrypt_num);//원래대로 배열 돌리기
+	encrypt(Sentence, -Encrypt_num); //원래대로 배열 돌리기
 
 	printf("Rotated: \t\t");
 	rotate(Sentence, Rotate_num);
 	puts(Sentence);
+	printf("\n");
 
 	return 0;
-
 }
-
 
 char * reverse(char * str1)
 {
@@ -77,25 +64,47 @@ char * reverse(char * str1)
 	return str1;
 }
 
-
 char * encrypt(char * str1, int n)
 {
 	int count = 0;
 
 	while (*(str1 + count))
 		count++;
-	//65~90 대문자, 97~122 소문자
+
 	for (int i = 0; i < count; i++)
 	{
-		if (*(str1 + i) >= 65 && *(str1 + i) <= 90)
-			*(str1 + i) += n;
-		else if (*(str1 + i) >= 97 && *(str1 + i) <= 122)
-			*(str1 + i) += n;
-		else
-			break;
-	}
+		int check1 = CheckRange(str1[i], 0);
+		int check2;
 
+		if (n > 26 || n < -26) //연산을 하면 알파벳 범위를 벗어나는 값들의 범위 
+			n %= 26;
+
+		if (check1) // 알파벳만을 입력했을 때를 가정한다. 
+		{
+
+			check2 = CheckRange(str1[i], n);
+			if (check1 == check2)
+				*(str1 + i) += n;
+			else
+			{
+				if (n > 0)
+					*(str1 + i) = *(str1 + i) + n - 26;
+				else
+					*(str1 + i) = *(str1 + i) + n + 26;
+			}
+		}
+	}
 	return str1;
+}
+
+int CheckRange(char str1, int n) // 알파벳이 아닌 경우에만 0을 반환한다. 
+{
+	if (str1 + n >= 65 && str1 + n <= 90)
+		return 1;
+	else if (str1 + n >= 97 && str1 + n <= 122)
+		return 2;
+	else
+		return 0;
 }
 
 char * rotate(char * str1, int n)
@@ -119,5 +128,3 @@ char * rotate(char * str1, int n)
 
 	return str1;
 }
-
-

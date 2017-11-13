@@ -1,0 +1,4 @@
+﻿  소스.c
+c:\users\jhu56\desktop\c언어연습\비주얼스튜디오\파일입출력연습\이진파일처리\이진파일처리\소스.c(39): warning C4047: '=': 'FILE *'의 간접 참조 수준이 'int'과(와) 다릅니다.
+  이진파일처리.vcxproj -> C:\Users\jhu56\Desktop\c언어연습\비주얼스튜디오\파일입출력연습\이진파일처리\Debug\이진파일처리.exe
+  이진파일처리.vcxproj -> C:\Users\jhu56\Desktop\c언어연습\비주얼스튜디오\파일입출력연습\이진파일처리\Debug\이진파일처리.pdb (Full PDB)

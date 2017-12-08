@@ -35,7 +35,7 @@ This text file describes brief but precise and complete specification of project
  ```
 
 ## <Function descriptions>
-
+ ```
 1. Trivial 
 	a. name: Trivial
 	b. input parameter: char str[], int n, int d
@@ -67,7 +67,7 @@ This text file describes brief but precise and complete specification of project
 5. main
 	a. file name: main.c
 	b. ownership : Yunho Choi 
-
+```
 ****
 
 ## <TEAM 5's idea>

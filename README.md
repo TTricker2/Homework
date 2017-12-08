@@ -5,30 +5,24 @@ This text file describes brief but precise and complete specification of project
 - declaration of important data and data types to be included in user header file
 - your team's brief ideas of implementations
 
---------------------------------------------------------------------------------------------------
+****
 ## <프로그램 개요>
  - 사용자에게 프로그램을 실행시킬 것인지 묻고, 반복해서 문자열의 길이와 Rotation 횟수를 받을 수 있게 만든다.
  - 문자열, 문자열의 길이, 회전 횟수 등의 input을 받아서 4가지 방법에 따라 문자열을 rotate시키는 프로그램을 작성한다.
  - 문자열의 길이, 회전 횟수, 4가지 rotate 방법에 따라 실행시간을 측정하고 비교한다.
---------------------------------------------------------------------------------------------------
+****
 
 ## <역할분담>
 
--header: 전현욱(Jeon1)
+- header: 전현욱(Jeon1)
+- main: 최윤호(yunho303)
+- trivial: 박시현(sihyun98)
+- juggling: 유호성(Youhoseong)
+- block-swap: 전현욱(Jeon1)
+- reverse: 김윤희(tngkrbb123)
+ -README 파일: 모두
 
--main: 최윤호(yunho303)
-
--trivial: 박시현(sihyun98)
-
--juggling: 유호성(Youhoseong)
-
--block-swap: 전현욱(Jeon1)
-
--reverse: 김윤희(tngkrbb123)
-
--README 파일: 모두
-
---------------------------------------------------------------------------------------------------
+****
 
 ## <Declaration of important data and data types in user header file>
 
@@ -40,11 +34,11 @@ This text file describes brief but precise and complete specification of project
 	   - <time.h>
     	c. ownership: Hyunuk Jeon
 
---------------------------------------------------------------------------------------------------
+****
 
 ## <Function descriptions>
 
-1. Trivial solution
+1. Trivial 
 	a. name: Trivial
 	b. input parameter: char str[], int n, int d
 	c. output parameter: [void]
@@ -76,7 +70,7 @@ This text file describes brief but precise and complete specification of project
 	a. file name: main.c
 	b. ownership : Yunho Choi 
 
---------------------------------------------------------------------------------------------------
+****
 
 ## <TEAM 5's idea>
 1. trivial
@@ -109,7 +103,7 @@ This text file describes brief but precise and complete specification of project
 	d. d가 음수일 때는 d값을 기준으로 두개로 나누어서 각각 reverse시킨후 원하는 d만큼 rotate시킨다.
 	e. d가 양수일때는 n - d값을 기준으로 두개로 나누어서 각각 reverse시킨후 원하는 d만큼 rotate시킨다.
 
---------------------------------------------------------------------------------------------------
+****
 ## <TestCase>
 
 ### [STRLength]  [ROTATE distance]  [T.trivial]    [T.juggle]     [T.bw]      [T.reverse] 
@@ -124,7 +118,7 @@ This text file describes brief but precise and complete specification of project
 1000000      12354               67.666000      0.009000       0.007000    0.008000
 10000000     200                 10.881000      0.151000       0.074000    0.074000
 10000000     2000                109.10000      0.106000       0.068000    0.075000
---------------------------------------------------------------------------------------------------
+****
 
 ## <결과 추론>
 
@@ -152,7 +146,7 @@ d의 값이 N/2의 값에 가까워 질 수록 더 빨라진다. 예를 들어�
 
  (d의 값이 N/2에 가까워 짐에 따라 아래 순서와 같아짐.)
 
---------------------------------------------------------------------------------------------------
+
 
 
 

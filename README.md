@@ -108,7 +108,7 @@ This text file describes brief but precise and complete specification of project
 	  e. d가 양수일때는 n - d값을 기준으로 두개로 나누어서 각각 reverse시킨후 원하는 d만큼 rotate시킨다.
 ```
 ****
-## <TestCase>
+## TestCase
 ```
 STRLength    ROTATE d            T.trivial     T.juggle        T.bw        T.reverse 
 
@@ -146,12 +146,13 @@ d의 값이 N/2의 값에 가까워 질 수록 더 빨라진다. 예를 들어�
 따라서 총 계산량이 약 n번이라 할 수 있으므로 실행 시간이 t라 할 때 약 N/170000000초 정도 소요됨을 추론할 수 있다.
 
 
+
 실행 시간이 오래걸리는 순으로 나열했을 때,
  ```
-  	 **trivial > juggle > block-swap > reverse**   또는
-	 **trivial > juggle > reverse > block-swap** 
-   임을 추론할 수 있다. 
-  ```
+  	 trivial > juggle > block-swap > reverse   또는
+	 trivial > juggle > reverse > block-swap
+ ``
+ 임을 추론할 수 있다. `
 
 
 

@@ -106,7 +106,7 @@ This text file describes brief but precise and complete specification of project
 ****
 ## <TestCase>
 ```
-### STRLength  ROTATE d   T.trivial     T.juggle      T.bw       T.reverse 
+STRLength  ROTATE d              T.trivial     T.juggle        T.bw        T.reverse 
 
 10	     1                   0.000000       0.000000       0.000000    0.000000
 100	     39			 0.000000       0.000000       0.000000    0.000000

@@ -14,25 +14,25 @@ This text file describes brief but precise and complete specification of project
 
 ## <역할분담>
 
-- header: 전현욱(Jeon1)
-- main: 최윤호(yunho303)
-- trivial: 박시현(sihyun98)
-- juggling: 유호성(Youhoseong)
-- block-swap: 전현욱(Jeon1)
-- reverse: 김윤희(tngkrbb123)
- -README 파일: 모두
+- **header**: 전현욱(Jeon1)
+- **main**: 최윤호(yunho303)
+- **trivial**: 박시현(sihyun98)
+- **juggling**: 유호성(Youhoseong)
+- **block-swap**: 전현욱(Jeon1)
+- **reverse**: 김윤희(tngkrbb123)
+- **README**: 모두
 ****
 
 ## <Declaration of important data and data types in user header file>
-
+ ```
 	a. name: Rotation.h 
 	b. Headers included
    	   - <stdio.h>
    	   - <stdlib.h>
   	   - <string.h>
 	   - <time.h>
-    	c. ownership: Hyunuk Jeon
-****
+    c. ownership: Hyunuk Jeon
+ ```
 
 ## <Function descriptions>
 

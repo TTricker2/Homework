@@ -81,23 +81,26 @@ This text file describes brief but precise and complete specification of project
 	  d. (d가 양수) temp에 첫번째 문자를 임시저장하고 다음칸의 문자를 앞칸으로 이동시킨다.
 	  e. (d가 음수) d를 음수로 변환한 후 temp를 n-1번째의 문자로 임시저장하고 다음칸의 문자를 앞칸의 문자로 저장한다.
  ```
-2. juggling
+**2. juggling**
+ ```
 	  a. 문자열 포인터와 n, 그리고 d를 인수로 넘겨 받는다.
 	  b. d가 음수일 때와 양수일 때로 CASE를 구분한다.
 	  c. (d가 음수) 문자열의 첫 번째 index를 temp에 임시 저장하고, d칸 간격으로 문자열을 이동시킨 뒤 
 	        마지막으로 마지막 index에 temp를 저장한다. 이 과정을 d와 n의 최대공약수 만큼 반복한다. 
 	  d. (d가 양수) 문자열의 마지막 index를 temp에 임시 저장하고, d칸 간격으로 문자열을 이동시킨 뒤
 	        마지막으로 첫 번째 index에 temp를 저장한다. 이 과정을 d와 n의 최대공약수 만큼 반복한다. 
-
-3. blockswap
+ ```
+**3. blockswap**
+ ```
 	swap함수(arr, a, b, d): d번만큼 a+i번째 원소와 b+i번째 원소를 교체한다.
 	  a. A블럭의 크기를 n-d, B블럭의 크기를 d로 초기 설정한다
 	  b. 'A블럭의 크기 < B블럭의 크기'이면 swap함수를 호출해서 (A블럭 크기)번 만큼 ((n-d)- A블럭의 크기)번째 원소와 
             (n-d)+(B블럭의 크기-A블럭의 크기)번째 원소를 교체한다. 
 	  c. 그렇지 않은 경우는 ((n-d)-A블럭 크기)번째 원소와 (n-d)번째 원소를 (B블럭 크기)번 만큼 교체한다. 
 	  d. 이 과정을 A블럭의 크기와 B블럭의 크기가 같아질 때까지 반복한다.
-
-4. reverse
+ ```
+**4. reverse**
+ ```
 	  a. 문자열과 rotate시킬 크기 d, 문자열의 길이인 n을 reverse함수의 인수로 넘겨 받는다.
 	  b. 세번 호출할 sub_reverse함수를 추가하여 문자열을 reverse시킬 수 있게 한다. 
 	  c. d가 음수일 때아 양수일 때로 CASE를 구분하여  sub_reverse함수를 호출할때의 범위를 다르게 지정한다.

@@ -21,7 +21,6 @@ This text file describes brief but precise and complete specification of project
 - block-swap: 전현욱(Jeon1)
 - reverse: 김윤희(tngkrbb123)
  -README 파일: 모두
-
 ****
 
 ## <Declaration of important data and data types in user header file>

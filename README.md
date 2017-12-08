@@ -149,10 +149,13 @@ d의 값이 N/2의 값에 가까워 질 수록 더 빨라진다. 예를 들어�
 
 실행 시간이 오래걸리는 순으로 나열했을 때,
  ```
-  	 trivial > juggle > block-swap > reverse   또는
-	 trivial > juggle > reverse > block-swap
- ``
- 임을 추론할 수 있다. `
+ trivial > juggle > block-swap > reverse  
+ ``` 
+또는
+ ```
+ trivial > juggle > reverse > block-swap
+ ```
+ 임을 추론할 수 있다. 
 
 
 

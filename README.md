@@ -23,7 +23,7 @@ This text file describes brief but precise and complete specification of project
 - **README**: 모두
 ****
 
-## <Declaration of important data and data types in user header file>
+## Declaration of important data and data types in user header file
  ```
 	a. name: Rotation.h 
 	b. Headers included
